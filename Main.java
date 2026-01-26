@@ -25,8 +25,11 @@ public class Main {
         /*LargestOddNumberinString str=new LargestOddNumberinString();
         System.out.println(str.largestOddNumber("456"));*/
 
-        RemoveOutermostParentheses rmv=new RemoveOutermostParentheses();
-        System.out.println(rmv.removeOuterParentheses("((()())(()))"));
+        /*RemoveOutermostParentheses rmv=new RemoveOutermostParentheses();
+        System.out.println(rmv.removeOuterParentheses("((()())(()))"));*/
+
+        MaximumAverageSubarray avr=new MaximumAverageSubarray();
+        int[] nums={1,12,-5,-6,50,3};
 
 
     }
