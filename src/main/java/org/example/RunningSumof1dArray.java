@@ -1,16 +1,38 @@
 package org.example;
 
+import java.util.Arrays;
+
 public class RunningSumof1dArray {
-    public int[] runningSum(int[] nums) {
+    public static int[] moveZeroes(int[] nums) {
+        /*int index = 0;
 
-        int[] arr = new int[nums.length];
-        int leftSum = nums[0];
-        arr[0] = leftSum;
-        for (int i = 1; i < arr.length; i++) {
-            leftSum = leftSum + nums[i];
-            arr[i] = leftSum;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] != 0) {
+                nums[index] = nums[i];
+                index++;
+            }
         }
-        return arr;
 
+        while (index < nums.length) {
+            nums[index] = 0;
+            index++;
+        }
+        return nums;*/
+
+        int j=0;
+        for (int i=0; i< nums.length; i++){
+            if(nums[i]!=0){
+                int temp=nums[i];
+                nums[i]=nums[j];
+                nums[j]=temp;
+                j++;
+            }
+        }
+        return nums;
+    }
+
+    public static void main(String[] args) {
+        int[]nums={0,1,0,3,12};
+        System.out.println(Arrays.toString(moveZeroes(nums)));
     }
 }
