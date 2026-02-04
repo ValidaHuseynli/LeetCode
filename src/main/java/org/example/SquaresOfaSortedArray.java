@@ -1,6 +1,6 @@
 package org.example;
 
-public class SquaresofaSortedArray {
+public class SquaresOfASortedArray {
     public int[] sortedSquares(int[] nums) {
 
         int left = 0;
