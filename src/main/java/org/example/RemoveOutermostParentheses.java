@@ -2,7 +2,7 @@ package org.example;
 
 public class RemoveOutermostParentheses {
 
-    String removeOuterParentheses(String S) {
+    static String removeOuterParentheses(String S) {
         StringBuilder res = new StringBuilder();
         int count = 0;
         for (char c : S.toCharArray()) {
@@ -12,6 +12,11 @@ public class RemoveOutermostParentheses {
                 res.append(c);
         }
         return res.toString();
+    }
+
+    public static void main(String[] args) {
+        String s="(()())(())(()(()))";
+        removeOuterParentheses(s);
     }
 
 }

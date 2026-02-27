@@ -28,8 +28,12 @@ public class Main {
         /*RemoveOutermostParentheses rmv=new RemoveOutermostParentheses();
         System.out.println(rmv.removeOuterParentheses("((()())(()))"));*/
 
-        MaximumAverageSubarray avr=new MaximumAverageSubarray();
-        int[] nums={1,12,-5,-6,50,3};
+        /*MaximumAverageSubarray avr=new MaximumAverageSubarray();
+        int[] nums={1,12,-5,-6,50,3};*/
+
+        double a=0.2;
+        double a1=0.1;
+        System.out.println(a+a1);
 
 
     }

@@ -7,17 +7,17 @@ import java.util.Map;
 public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
 
-        for (int j=0; j< nums.length; j++) {
+        /*for (int j=0; j< nums.length; j++) {
             for (int i = j+1; i < nums.length; i++) {
                 if (nums[i]+nums[j]==target) {
                     return new int[] {j,i};
                 }
             }
         }
-        return null;
+        return null;*/
 
 
-        /*Map<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
             int need = target - nums[i];
@@ -27,12 +27,12 @@ public class TwoSum {
             }
             map.put(nums[i], i);
         }
-        return new int[0];*/
+        return new int[0];
 
     }
 
     public static void main(String[] args) {
-        int [] nums={3,2,4};
+        int [] nums={3,2,4, 5, 7,8};
         System.out.println(Arrays.toString(twoSum(nums, 6)));
     }
 }

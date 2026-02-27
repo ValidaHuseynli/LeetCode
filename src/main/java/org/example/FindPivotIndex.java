@@ -4,19 +4,18 @@ public class FindPivotIndex {
     public static int pivotIndex(int[] nums) {
 
         int totalSum=0;
-
-        for(int i: nums){
-            totalSum=totalSum+i;
+        for (int num : nums) {
+            totalSum=totalSum+num;
         }
-
-        int leftSum=0;
-        for(int i=0; i< nums.length; i++){
-            int rightSum=totalSum-leftSum-nums[i];
-            if(rightSum==leftSum)
+        int leftsum=0;
+        for (int i=0; i<nums.length; i++) {
+            int rightSum=totalSum-leftsum-nums[i];
+            if(rightSum==leftsum)
                 return i;
-            leftSum=leftSum+nums[i];
+            else leftsum+=nums[i];
         }
         return -1;
+
     }
 
     public static void main(String[] args) {
